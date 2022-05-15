@@ -17,7 +17,7 @@
 
 * 최종적인 결과 : Encoded Header + "." + Encoded Payload + "." + Verify Signature
 
-  Header, Payload는 인코딩될 뿐(16진수로 변경), 따로 암호화되지 않습니다. 따라서 JWT 토큰에서 Header, Payload는 누구나 디코딩하여 확인할 수 있다. 여기서 누구나 디코딩할 수 있다는 말은 Payload에는 유저의 중요한 정보(비밀번호)가 들어가면 쉽게 노출될 수 있다는 말이 된다. 
+  Header, Payload는 인코딩될 뿐(16진수로 변경), 따로 암호화되지 않는다. 따라서 JWT 토큰에서 Header, Payload는 누구나 디코딩하여 확인할 수 있다. 여기서 누구나 디코딩할 수 있다는 말은 Payload에는 유저의 중요한 정보(비밀번호)가 들어가면 쉽게 노출될 수 있다는 말이 된다. 
  
 * 하지만 Verify Signature는 SECRET KEY를 알지 못하면 복호화할 수 없다.
 
