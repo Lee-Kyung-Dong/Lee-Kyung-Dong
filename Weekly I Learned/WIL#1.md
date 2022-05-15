@@ -39,7 +39,8 @@
   2. Payload 정보가 제한적이다. 위에서 언급했다시피 Payload는 따로 암호화되지 않기 때문에 디코딩하면 누구나 정보를 확인할 수 있다. (세션/쿠키 방식에서는 유저의 정보가 전부 서버의 저장소에 안전하게 보관된다) 따라서 유저의 중요한 정보들은 Payload에 넣을 수 없다.
   3. 세션/쿠키 방식에 비해 JWT의 길이는 길다. 따라서 인증이 필요한 요청이 많아질 수록 서버의 자원낭비가 발생하게 된다.
 
-  출처 : [https://tansfil.tistory.com/58?category=255594](https://github.com/Lee-Kyung-Dong/Lee-Kyung-Dong.git)
+출처 : [https://tansfil.tistory.com/58?category=255594](https://github.com/Lee-Kyung-Dong/Lee-Kyung-Dong.git)
+
 
 ### API
 
@@ -54,4 +55,6 @@
 
 * 웹 API
   웹 애플리케이션 개발에서 다른 서비스에 요청을 보내고 응답을 받기 위해 정의된 명세를 일컫는다. 예를 들어 블로그 API를 이용하면 블로그에 접속하지 않고도 다른 방법으로 글을 올릴 수 있다. 그 외에 우체국의 우편번호 API, 구글과 네이버의 지도 API등 유용한 API들이 많으므로, 요즘은 홈페이지 구축이나 추가개편 시 따로 추가로 개발하지 않고 이런 오픈 API를 가져와 사용하는 추세다.
+
+출처 : 위키백과 [https://ko.wikipedia.org/wiki/API](https://ko.wikipedia.org/wiki/API)
 
