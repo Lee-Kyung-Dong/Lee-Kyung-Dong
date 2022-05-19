@@ -69,7 +69,6 @@
 
 ### Transportation interface
 ```JAVA
-# 코드 조각
 package assignment;
 
 public interface Transprtation {
@@ -82,7 +81,6 @@ public interface Transprtation {
 
 ### Bus class
 ```JAVA
-# 코드 조각
 package assignment;
 
 public class Bus implements Transprtation {
