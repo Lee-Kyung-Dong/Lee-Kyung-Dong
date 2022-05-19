@@ -1,7 +1,7 @@
-### JAVA 프로그래밍 기초 과제 
+# JAVA 프로그래밍 기초 과제 
 ## 항해99 부트캠프 ing
 
-# **아래의 정보를 가지는 ‘Bus’ 클래스 모델링**
+### **아래의 정보를 가지는 ‘Bus’ 클래스 모델링**
     - 포함해야 할 정보
         1. 최대 승객수
         2. 현재 승객수
@@ -35,7 +35,7 @@
                 - print문으로 출력
         - 변경할 속도를 입력 받아 현재 속도에 추가 하거나 뺄 수 있어야 합니다.
 
-# **아래의 정보를 가지는 ‘Taxi’ 클래스 모델링**
+### **아래의 정보를 가지는 ‘Taxi’ 클래스 모델링**
     - 포함해야 할 정보
         1. 택시 번호 
         2. 주유량
@@ -67,7 +67,7 @@
         - 요금 결제
             - 최종 요금을 출력하는 것으로 합니다.
 
-# Transportation interface
+### Transportation interface
 ```JAVA
 # 코드 조각
 package assignment;
@@ -80,7 +80,7 @@ public interface Transprtation {
 }
 ```
 
-# Bus class
+### Bus class
 ```JAVA
 # 코드 조각
 package assignment;
@@ -160,7 +160,7 @@ public class Bus implements Transprtation {
 
 ```
 
-# Taxi class
+### Taxi class
 ```JAVA
 package assignment;
 
