@@ -126,7 +126,7 @@
 
   3. 자바 ME
 
-    1. CLDC
+    * CLDC
 
       * 저사양 임베디드 시스템을 위한 플랫폼으로 특히 스마트폰이 아닌 피처폰에서 많이 사용된다. 8~32MHz 클럭으로 동작하는 16비트 혹은 32비트 프로세서, 최소 160KB ROM(Flash), 32KB RAM을 목표로한 플랫폼이다.
 
@@ -144,7 +144,7 @@
 
       * 주요 구현 : 오라클 KVM, IBM WEME(WebSphere Everyplace Micro Environment) (: 동일한 코드에서 CLDC/CDC 버전을 도출)
 
-    2. CDC
+    * CDC
 
       * 상대적으로 고사양 임베디드 시스템을 위한 플랫폼으로 디지털 TV나 블루레이 디스크 플레이어에 널리 사용되고 있다. 원래는 스마트폰 같은 고사양 휴대폰에도 CDC를 보급하는 것이 목적이었으나 안드로이드, iOS 위주로 재편된 시장에서는 거의 사용되지 않는다.
 
@@ -154,7 +154,7 @@
   
   4. 자바 카드
 
-    1. Classic Edition
+    * Classic Edition
 
       * 메모리/CPU가 제약된 스마트카드용 플랫폼으로 목표 환경은 통상 RAM 1.2KB, EEPROM이나 flash 16KB, ROM 32~48K 정도를 가진다.
 
@@ -172,7 +172,7 @@
         * 클래스 파일 형식 대신 CAP (Converted Applet) 파일 사용
         * char, double, float, long 타입 제외
 
-    2. Connected Edition
+    * Connected Edition
 
       * 스마트카드의 고사양화에 의해 새로 추가된 플랫폼이다. 최소 환경은 비휘발성 메모리 176 KB, RAM 16KB를 요구한다. 통상적으로는 ROM 512KB, 읽고 쓸 수 있는 비휘발성 메모리 128KB, RAM 24KB 정도의 환경을 목표로 한다.
 
