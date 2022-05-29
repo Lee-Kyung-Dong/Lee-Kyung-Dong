@@ -139,62 +139,62 @@
 
   1. 자바 어노테이션(Java Annotation)을 사용하는 방법
 
-    JAVA에서 Annotation은 자바 소스 코드에 추가하여 사용할 수 있는 메타데이터의 일종이다.
-    Java에서는 @Override, @Deprecated 와 같은 기본적인 Annotation을 제공한다.
+      JAVA에서 Annotation은 자바 소스 코드에 추가하여 사용할 수 있는 메타데이터의 일종이다.
+      Java에서는 @Override, @Deprecated 와 같은 기본적인 Annotation을 제공한다.
 
-    Spring에서는 여러 가지 Annotation을 사용하지만, Bean을 등록하기 위해서는 @Component Annotation을 사용한다. @Component Annotation이 등록되어 있는 경우에는 Spring이 Annotation을 확인하고 자체적으로 Bean 으로 등록한다.
+      Spring에서는 여러 가지 Annotation을 사용하지만, Bean을 등록하기 위해서는 @Component Annotation을 사용한다. @Component Annotation이 등록되어 있는 경우에는 Spring이 Annotation을 확인하고 자체적으로 Bean 으로 등록한다.
 
-    실제 Spring 프로젝트에서 Controller를 등록할 때에는 아래와 같은 Annotation을 사용한다. 아래의 예시에서 Controller 임을 Spring 에게 알려주기 위하여 @Controller Annotation을 사용했다.
+      실제 Spring 프로젝트에서 Controller를 등록할 때에는 아래와 같은 Annotation을 사용한다. 아래의 예시에서 Controller 임을 Spring 에게 알려주기 위하여 @Controller Annotation을 사용했다.
 
-    ```java
-    // HelloController.java
-    @Controller
-    public class HelloController {
-        // @GetMapping Annotation을 사용하여 Mapping을 사용
-        @GetMapping("hello")
-        public String hello(Model model){
-            model.addAttribute("data", "This is data!!");
-            return "hello";
-        }
-    }
-    ```
+      ```java
+      // HelloController.java
+      @Controller
+      public class HelloController {
+          // @GetMapping Annotation을 사용하여 Mapping을 사용
+          @GetMapping("hello")
+          public String hello(Model model){
+              model.addAttribute("data", "This is data!!");
+              return "hello";
+          }
+      }
+      ```
 
-    @Controller Annotation을 intelliJ에서 Ctrl 을 눌러서 이동해보면 아래와 같은 소스를 확인할 수 있다. @Controller Annotation에는 @Component Annotation이 있는 것을 확인할 수 있다. @Component Annotation 으로 인하여 Spring은 해당 Controller를 Bean 으로 등록한다.
+      @Controller Annotation을 intelliJ에서 Ctrl 을 눌러서 이동해보면 아래와 같은 소스를 확인할 수 있다. @Controller Annotation에는 @Component Annotation이 있는 것을 확인할 수 있다. @Component Annotation 으로 인하여 Spring은 해당 Controller를 Bean 으로 등록한다.
 
-    ```java
-    // Controller.java
+      ```java
+      // Controller.java
 
-    // -- 일부 생략 --
-    @Target({ElementType.TYPE})
-    @Retention(RetentionPolicy.RUNTIME)
-    @Documented
-    @Component
-    public @interface Controller {
-      /**
-      * The value may indicate a suggestion for a logical component name,
-      * to be turned into a Spring bean in case of an autodetected component.
-      * @return the suggested component name, if any (or empty String otherwise)
-      */
-      @AliasFor(annotation = Component.class)
-      String value() default "";
-    }
-    ```
+      // -- 일부 생략 --
+      @Target({ElementType.TYPE})
+      @Retention(RetentionPolicy.RUNTIME)
+      @Documented
+      @Component
+      public @interface Controller {
+        /**
+        * The value may indicate a suggestion for a logical component name,
+        * to be turned into a Spring bean in case of an autodetected component.
+        * @return the suggested component name, if any (or empty String otherwise)
+        */
+        @AliasFor(annotation = Component.class)
+        String value() default "";
+      }
+      ```
   
 
   2. Bean Configuration File에 직접 Bean 등록하는 방법
 
-    @Configuration과 @Bean Annotation 을 이용하여 Bean을 등록할 수 있다. 아래의 예제와 같이 @Configuration을 이용하면 Spring Project 에서의 Configuration 역할을 하는 Class를 지정할 수 있다. 해당 File 하위에 Bean 으로 등록하고자 하는 Class에 @Bean Annotation을 사용해주면 간단하게 Bean을 등록할 수 있다.
+      @Configuration과 @Bean Annotation 을 이용하여 Bean을 등록할 수 있다. 아래의 예제와 같이 @Configuration을 이용하면 Spring Project 에서의 Configuration 역할을 하는 Class를 지정할 수 있다. 해당 File 하위에 Bean 으로 등록하고자 하는 Class에 @Bean Annotation을 사용해주면 간단하게 Bean을 등록할 수 있다.
 
-    ```java
-    // Hello.java
-    @Configuration
-    public class HelloConfiguration {
-        @Bean
-        public HelloController sampleController() {
-            return new SampleController;
-        }
-    }
-    ```
+      ```java
+      // Hello.java
+      @Configuration
+      public class HelloConfiguration {
+          @Bean
+          public HelloController sampleController() {
+              return new SampleController;
+          }
+      }
+      ```
 
 
 
