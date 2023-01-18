@@ -1,0 +1,548 @@
+주행거리블랙박스 MileageTobeController 클래스 메소드 기능 정리
+
+mileageBlackBox01(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 주행거리/블랙박스 특약 가입
+		[처리구분]
+		01. 신규
+		03. 변경(차량대체)
+		04. 변경(해지정산)
+		05. 변경(가입변경)
+			대상계약 확인 및 계기판 사진 등록
+	2. 주행거리/블랙박스 특약 가입
+		[처리구분]
+		01. 신규
+		05. 변경(가입변경) - 추가가입
+			대상계약 확인 및 계기판 사진 등록 (자동차)
+	3. 주행거리/블랙박스 특약 가입
+		[처리구분]
+		01. 신규
+		05. 변경(가입변경) - 추가가입
+			대상계약 확인 및 계기판 사진 등록 (이륜차)
+
+mileageNew02(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			대상계약 확인 및 계기판 사진 등록
+	
+mileageNewOCR(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			계기판 OCR 인식 및 인식결과 수신
+
+mileageNew03(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			인식된 주행거리 확인 및 수정 화면
+
+mileageNewOCR2(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			주행거리전달 및 EDMS 사진 등록
+
+mileageNew04(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			사진등록완료 안내, 전계약정산 진행여부 확인
+
+mileageNew05(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			전계약정산진행 및 EDMS 사진 등록
+
+mileageNew05go(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			환급대상 직전계약 정보 확인 및 환급방법 선택 화면
+
+mileageNew06A(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			계좌환급
+
+mileageNew06B(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			갱신대체
+
+mileageNew06B2(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			갱신대체
+
+mileageNew06C(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			카드부분취소
+
+mileageNew06C2(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리/블랙박스 특약 가입
+		신규/타사 & 전계약 주행거리 미정산 건
+			카드부분취소
+
+mileageBlackBox02(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 주행거리/블랙박스 특약 가입
+		[처리구분]
+		01. 신규
+		03. 변경(차량대체)
+		04. 변경(해지정산)
+		05. 변경(가입변경)
+			대상계약 확인 및 계기판 사진 등록
+	2. 주행거리/블랙박스 특약 가입
+		[처리구분]
+		01. 신규
+		05. 변경(가입변경) - 추가가입
+			대상계약 확인 및 계기판 사진 등록 (자동차)
+	3. 주행거리/블랙박스 특약 가입
+		[처리구분]
+		01. 신규
+		05. 변경(가입변경) - 추가가입
+			대상계약 확인 및 계기판 사진 등록 (이륜차)
+
+mileageBlackBoxFileUpload(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 주행거리/블랙박스 특약 가입
+		[처리구분]
+		01. 신규
+		03. 변경(차량대체)
+		04. 변경(해지정산)
+		05. 변경(가입변경)
+			대상계약 확인 및 계기판 사진 등록
+	2. 주행거리/블랙박스 특약 가입
+		[처리구분]
+		01. 신규
+		05. 변경(가입변경) - 추가가입
+			대상계약 확인 및 계기판 사진 등록 (자동차)
+
+blackBoxFileUpload(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 주행거리/블랙박스 특약 가입
+		[처리구분]
+		01. 신규
+		05. 변경(가입변경) - 추가가입
+			대상계약 확인 및 계기판 사진 등록 (이륜차)
+	2. 할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		02. 블랙박스
+		[이륜차여부]
+		1. 여
+			이륜차 사진등록 후 전자서명 업무로 이동
+
+aes256Decrypt(String)
+
+aes256Encrypt(String)
+
+mycar01(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	자차담보/관련서류
+		[모바일업무구분코드]
+		01. 자차추가
+		02. 계약사진
+		35. Baby-In-Car
+		43. 차선이탈경고장치
+		55. 전방충돌경고장치
+		69. 해지/취소
+		71. 자동차사항(차량대체)
+		72. 요율사항
+		73. 가입경력지정자
+			대상계약 확인
+
+mycar02(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 자차담보/관련서류
+		[모바일업무구분코드]
+		01. 자차추가
+		02. 계약사진
+		35. Baby-In-Car
+		43. 차선이탈경고장치
+		55. 전방충돌경고장치
+		69. 해지/취소
+		71. 자동차사항(차량대체)
+		72. 요율사항
+		73. 가입경력지정자
+			대상계약 확인
+	2. 자차담보/관련서류
+		[모바일업무구분코드]
+		01. 자차추가
+		02. 계약사진
+		35. Baby-In-Car
+		43. 차선이탈경고장치
+		55. 전방충돌경고장치
+		69. 해지/취소
+		71. 자동차사항(차량대체)
+		72. 요율사항
+		73. 가입경력지정자
+			사진 등록
+
+mycarFileUpload(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	자차담보/관련서류
+		[모바일업무구분코드]
+		01. 자차추가
+		02. 계약사진
+		35. Baby-In-Car
+		43. 차선이탈경고장치
+		55. 전방충돌경고장치
+		69. 해지/취소
+		71. 자동차사항(차량대체)
+		72. 요율사항
+		73. 가입경력지정자
+			사진 등록
+
+ml1(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			대상계약 정보조회
+
+ml2(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			대상계약 정보조회
+	2. 주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			주행거리 계기판 사진등록
+
+ml2_1(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			주행거리 계기판 사진등록
+	2. 주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			주행거리 확인
+
+ml3(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			주행거리 확인
+	2. 주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			정산 신청(주행거리, 보험료 안내)
+			화면처리코드 & 상품출처구분 분기많음
+
+ml3_1(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			정산 신청(주행거리, 보험료 안내)
+			화면처리코드 & 상품출처구분 분기많음
+			(추가가입 시)
+
+ml4(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			만기정산 처리 및 보험료 환급 안내
+			(환급보험료 수령 계좌정보 입력)
+
+ml4_1(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			갱신차감 신청, 완료
+
+ml4_2(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+ml5(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			(TM 채널 취급자 발송)
+			갱신된 계약에 주행거리 특약 가입 건
+
+mlCancelCard(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+ml_crd_end(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			카드취소 완료페이지
+
+otcm_self_ctf(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	타사갱신계약 자동정산
+		당사 고객이었다가 타사로 이탈한 고객에 대한 환급 프로세스
+			본인인증
+
+otcm_jungsan1(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 타사갱신계약 자동정산
+		당사 고객이었다가 타사로 이탈한 고객에 대한 환급 프로세스
+			환급정보조회 및 환급신청
+	2. 타사갱신계약 자동정산
+		당사 고객이었다가 타사로 이탈한 고객에 대한 환급 프로세스
+			계좌환급
+
+otcm_jungsan1_end(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+otcm_jungsan2(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 타사갱신계약 자동정산
+		당사 고객이었다가 타사로 이탈한 고객에 대한 환급 프로세스
+			카드환급
+	2. 타사갱신계약 자동정산
+		당사 고객이었다가 타사로 이탈한 고객에 대한 환급 프로세스
+			카드환급 완료 페이지
+
+mlFileUpload(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			주행거리 계기판 사진등록
+
+mlFileUploadOCR(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			주행거리 계기판 사진등록
+
+mlFileUploadOCR2(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	주행거리 만기정산
+		[처리구분]
+		08. 만기정산
+		09. OCR정산
+			주행거리 확인
+
+up1(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			대상계약 확인
+
+up2(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			대상계약 확인
+	2. 할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			사진 등록
+
+up3(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+			대상계약 확인
+
+up4(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	1. 할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+			대상계약 확인
+	2. 할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+			사진 등록
+	3. 할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+			계기판 주행거리 확인 및 할인특약 사진등록
+
+up5(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		02. 블랙박스
+		[이륜차여부]
+		1. 여
+			대상계약 확인(이륜차)
+
+up6(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		02. 블랙박스
+		[이륜차여부]
+		1. 여
+			이륜차 사진등록 후 전자서명 업무로 이동
+
+up_status(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+			사진 등록
+
+upFileUpload(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+upFileUploadTest(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+upMileageStep2(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			사진 등록
+
+upMileageStep3(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+upMileageStep13(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+			계기판 주행거리 및 할인특약 사진등록
+
+upMileageStep4(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+			사진 등록
+
+upMileageStep5(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+upMileageStep15(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송 (전자서명에서 호출용)
+	전자서명 - 사진등록 - 보험료결제 or 전자서명확인
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+			계기판 주행거리 및 할인특약 사진등록
+
+upMileageStep6(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			직전계약 주행거리정산
+
+upMileageStep6go(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			직전계약 주행거리정산
+
+upMileageStep7A(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			계좌 환급
+
+upMileageStep7B(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			갱신 대체
+
+upMileageStep7B2(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			갱신 대체
+
+upMileageStep7C(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			카드 취소
+
+upMileageStep7C2(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+	할인특약 통합발송
+		[할인특약 구분]
+		01. 주행거리
+		02. 블랙박스
+		03. 베이비인카
+		04. 차선이탈
+		05. 전방충돌
+			카드 취소
+
+updatejungsan(HttpServletRequest, Model)
+
+chatMileage01(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chatMileage02(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chatMileageFileUpload(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chat_ml1(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chat_ml2(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chat_ml2_1(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chat_ml3(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chat_ml3_1(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chat_ml4(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chat_ml4_1(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chat_ml4_2(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chat_ml5(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chatMlCancelCard(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chat_ml_crd_end(HttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chatMlFileUpload(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chatMlFileUploadOCR(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+chatMlFileUploadOCR2(MultipartHttpServletRequest, HttpServletResponse, ModelMap, RedirectAttributes)
+
+getDayTime()
